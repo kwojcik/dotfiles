@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/Users/kevin/gocode/src/code.uber.internal/infra/xys-query/vendor/github.com/uber-common/xys/query/main'
+let g:netrw_dirhist_2='/Users/kevin/gocode/src/code.uber.internal/infra/xys-query/.git'
+let g:netrw_dirhist_3='/Users/kevin/gocode/src/code.uber.internal/infra/xys-query/go-build'
+let g:netrw_dirhist_4='/Users/kevin/gocode/src/github.com/uber-common/xys/aggregator/main'
+let g:netrw_dirhist_5='/Users/kevin/Uber'
+let g:netrw_dirhist_6='/Users/kevin/rtapi-platform'
+let g:netrw_dirhist_7='/Users/kevin/gocode/src/code.uber.internal/infra/xys/vendor/github.com/uber-common/xys'
+let g:netrw_dirhist_8='/Users/kevin/gocode/src/github.com/uber-common/xys/aggregator/main'
+let g:netrw_dirhist_9='/Users/kevin/gocode/src/github.com/uber-common/xys/endpointrewriter'

@@ -1,4 +1,5 @@
 source ~/.uber_profile # if I'm on work compooter
+source ~/.git-completion
 export GOPATH="$HOME/gocode"
 export PATH="$PATH:$GOPATH/bin"
 

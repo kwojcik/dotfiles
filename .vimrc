@@ -11,6 +11,10 @@ let g:go_fmt_command = "goimports"
 " Run lint, vet, etc on save
 let g:go_metalinter_autosave = 1
 
+" Convenience remaps to GoTest and GoBuild
+nmap :gt :GoTest
+nmap :gb :GoBuild
+
 " End golang
 
 set tabstop=4

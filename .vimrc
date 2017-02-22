@@ -1,21 +1,6 @@
 execute pathogen#infect()
 
-
 filetype plugin indent on
-
-" Golang
-
-"Automatically run goimport on save
-let g:go_fmt_command = "goimports"
-
-" Run lint, vet, etc on save
-let g:go_metalinter_autosave = 1
-
-" Convenience remaps to GoTest and GoBuild
-nmap :gt :GoTest
-nmap :gb :GoBuild
-
-" End golang
 
 set tabstop=4
 set shiftwidth=4
@@ -28,6 +13,12 @@ filetype on
 
 set backspace=indent,eol,start
 set laststatus=2
+
+" Alias WQ typos to wq
+:command Wq wq
+:command WQ wq
+:command W w
+:command Q q
 
 "Highlight over 100 char lines
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
@@ -167,4 +158,18 @@ if has("cscope")
 
 endif
 
+" Golang
 
+"Automatically run goimport on save
+let g:go_fmt_command = "goimports"
+
+" Run lint, vet, etc on save
+let g:go_metalinter_autosave = 1
+
+" Convenience remaps to :gt to :GoTest and :gb to GoBuild
+:command GT GoTest
+:cabbrev gt GT
+:command GB GoBuild
+:cabbrev gb GB
+
+" End golang

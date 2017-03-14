@@ -14,6 +14,9 @@ alias ls='ls -G'
 alias gitgraph='git log --graph --full-history --all --color --pretty=format:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s"'
 alias gsheet='pbcopy && open -a /Applications/Google\ Chrome.app https://sheets.google.com/create'
 
+# csb <file suffix> generates a cscope index for all files of that type
+alias csb='function _f(){ find . -name "*.$1" > cscope.files; cscope -b; }; _f'
+
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
     alias pbcopy='xclip -sel clip';
     alias pbpaste='xclip -sel clip -o';

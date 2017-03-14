@@ -7,7 +7,7 @@ set shiftwidth=4
 set expandtab
 set ruler
 set cursorline
-hi CursorLine cterm=NONE ctermbg=235
+hi CursorLine cterm=NONE ctermbg=237
 syntax on
 filetype on
 
@@ -16,12 +16,13 @@ set laststatus=2
 
 " Alias WQ typos to wq
 :command Wq wq
+:command wQ wq
 :command WQ wq
 :command W w
 :command Q q
 
 "Highlight over 100 char lines
-highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+highlight OverLength ctermfg=red
 match OverLength /\%101v.\+/
 execute "set colorcolumn=" . join(range(101,335), ',')
 highlight ColorColumn ctermbg=235

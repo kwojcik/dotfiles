@@ -7,7 +7,7 @@ export GOPATH="$HOME/gocode"
 export PATH="$PATH:$GOPATH/bin"
 export PATH="$PATH:/usr/local/cuda-8.0/bin"
 export LD_LIBRARY_PATH="/usr/local/cuda-8.0/lib64"
-export PS1='\W $'
+export PS1='\W $ '
 
 which hub > /dev/null && alias git=hub
 alias ls='ls -G'

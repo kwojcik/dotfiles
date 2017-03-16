@@ -16,7 +16,6 @@ set laststatus=2
 
 " Alias WQ typos to wq
 :command Wq wq
-:command wQ wq
 :command WQ wq
 :command W w
 :command Q q

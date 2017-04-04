@@ -7,6 +7,7 @@ set shiftwidth=4
 set expandtab
 set ruler
 set cursorline
+set hlsearch
 hi CursorLine cterm=NONE ctermbg=237
 syntax on
 filetype on

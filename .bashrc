@@ -13,6 +13,11 @@ which hub > /dev/null && alias git=hub
 alias ls='ls -G'
 alias gitgraph='git log --graph --full-history --all --color --pretty=format:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s"'
 alias gsheet='pbcopy && open -a /Applications/Google\ Chrome.app https://sheets.google.com/create'
+alias grim='git rebase -i master'
+alias grm='git rebase master'
+alias grc='git rebase --continue'
+alias gc='git commit -a -m '
+alias gco='git checkout '
 
 # lol...
 alias :e=vim

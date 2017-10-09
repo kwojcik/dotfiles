@@ -1,8 +1,10 @@
 if [ -a ~/.uber_profile ]; then
     source ~/.uber_profile # if I'm on work compooter
 fi
-
-source ~/.git-completion
+if [ -f ~/.git-completion ]; then
+    source ~/.git-completion
+    __git_complete gco _git_checkout
+fi
 export GOPATH="$HOME/gocode"
 export PATH="$PATH:$GOPATH/bin"
 export PATH="$PATH:/usr/local/cuda-8.0/bin"
@@ -13,6 +15,7 @@ which hub > /dev/null && alias git=hub
 alias ls='ls -G'
 alias gitgraph='git log --graph --full-history --all --color --pretty=format:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s"'
 alias gsheet='pbcopy && open -a /Applications/Google\ Chrome.app https://sheets.google.com/create'
+
 alias grim='git rebase -i master'
 alias grm='git rebase master'
 alias grc='git rebase --continue'
@@ -21,6 +24,7 @@ alias gc='git commit -a -m '
 alias gco='git checkout'
 alias gcob='git checkout -b'
 alias gb='git branch'
+
 
 # lol...
 alias :e=vim

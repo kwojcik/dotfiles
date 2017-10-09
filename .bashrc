@@ -16,8 +16,11 @@ alias gsheet='pbcopy && open -a /Applications/Google\ Chrome.app https://sheets.
 alias grim='git rebase -i master'
 alias grm='git rebase master'
 alias grc='git rebase --continue'
+alias gro='git rebase --onto'
 alias gc='git commit -a -m '
-alias gco='git checkout '
+alias gco='git checkout'
+alias gcob='git checkout -b'
+alias gb='git branch'
 
 # lol...
 alias :e=vim

@@ -24,6 +24,7 @@ alias gc='git commit -a -m '
 alias gco='git checkout'
 alias gcob='git checkout -b'
 alias gb='git branch'
+alias vim=nvim
 
 
 # lol...

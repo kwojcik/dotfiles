@@ -2,6 +2,7 @@ execute pathogen#infect()
 
 filetype plugin indent on
 
+colorscheme koehler
 set tabstop=4
 set shiftwidth=4
 set expandtab

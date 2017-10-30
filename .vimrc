@@ -174,4 +174,7 @@ let g:go_metalinter_autosave = 1
 :command GB GoBuild
 :cabbrev gb GB
 
+" open godef searches in same window
+let g:godef_split=0
+
 " End golang

@@ -24,11 +24,13 @@ set laststatus=2
 
 "Highlight over 100 char lines
 highlight OverLength ctermfg=red
+set synmaxcol=150
 match OverLength /\%101v.\+/
 execute "set colorcolumn=" . join(range(101,335), ',')
 highlight ColorColumn ctermbg=235
 
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+autocmd FileType ruby,erb setlocal tabstop=2 shiftwidth=2
 
 " copy/pasted this cscope stuff from some tutorial online
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -178,3 +180,21 @@ let g:go_metalinter_autosave = 1
 let g:godef_split=0
 
 " End golang
+
+" Ruby
+:command Rubocop ! rubocop %:t
+:cabbrev rc Rubocop
+:command RubocopAutocorrect ! rubocop -a %:p
+:cabbrev rca RubocopAutocorrect
+
+" ArgWrap
+nnoremap <silent> <leader>a :ArgWrap<CR>
+
+"syntastic
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
+"let g:syntastic_always_populate_loc_list = 1
+"let g:syntastic_auto_loc_list = 1
+"let g:syntastic_check_on_open = 1
+"let g:syntastic_check_on_wq = 0
